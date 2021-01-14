@@ -7,11 +7,11 @@ Draft Kings Implementation
 import pandas as pd
 df = pd.read_csv(r'testdf.csv')
 
-n = 142
-W = 50000
+n = 142 # number of players
+W = 50000 # DraftKings Salary cap
 maxplayers = 8
-p = list(df['dkfp'])
-w = list(df['Salary'])
+p = list(df['dkfp']) # profit is draft kings fantasy points
+w = list(df['Salary']) # players' salary is the weight
 p_per_weight = list(df['points_per_dollar'])
 
 class Priority_Queue:
